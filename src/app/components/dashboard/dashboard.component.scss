@@ -1,0 +1,17 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-template-areas: "sidebar main";
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar-component {
+  grid-area: "sidebar";
+  background-color: red;
+}
+
+.main-component {
+  grid-area: "main";
+  background-color: green;
+}
