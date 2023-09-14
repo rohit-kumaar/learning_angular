@@ -1,15 +1,33 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-scheme',
   templateUrl: './scheme.component.html',
-  styleUrls: ['./scheme.component.scss']
+  styleUrls: ['./scheme.component.scss'],
 })
 export class SchemeComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  loginForm = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [
+      Validators.required,
+      Validators.minLength(5),
+    ]),
+  });
+
+  onSubmit() {
+    console.log(this.loginForm.value);
   }
 
+  get emailValidator() {
+    return this.loginForm.get('email');
+  }
+
+  get passwordValidator() {
+    return this.loginForm.get('password');
+  }
 }
