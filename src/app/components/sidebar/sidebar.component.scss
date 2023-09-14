@@ -10,10 +10,15 @@ ul {
       min-width: 70px;
       padding-block: 10px;
       border: 0;
-      background-color: transparent;
+      background: transparent;
       font-size: 13px;
       font-weight: 600;
       cursor: pointer;
     }
   }
+}
+
+.router-link-active {
+  background: rgba(#000000, 0.2) !important;
+  color: #fff;
 }
