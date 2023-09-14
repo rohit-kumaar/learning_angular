@@ -11,6 +11,7 @@ import { DetailsComponent } from './common-components/details/details.component'
 import { AddFundComponent } from './components/add-fund/add-fund.component';
 import { AddSchemeComponent } from './components/add-scheme/add-scheme.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

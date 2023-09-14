@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -40,4 +41,61 @@ picture,
 svg {
   max-width: 100%;
   display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+  gap: 15px;
+
+  > h1 {
+    margin-bottom: 20px;
+  }
+
+  > div {
+    width: 50%;
+    height: 58px;
+
+    > input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #00ffbf;
+      border-radius: 5px;
+
+      &::placeholder {
+        font-size: 15px;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    > span {
+      font-size: 10px;
+      color: red;
+    }
+  }
+
+  > button {
+    display: grid;
+    place-items: center;
+    padding: 7px 25px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: #00ffbf;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #00ffbf;
+      background-color: white;
+      color: #00ffbf;
+    }
+  }
 }
