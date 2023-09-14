@@ -6,7 +6,9 @@ ul {
   padding-block: 30px;
 
   > li {
-    > button {
+    > a {
+      display: grid;
+      place-items: center;
       min-width: 70px;
       padding-block: 10px;
       border: 0;

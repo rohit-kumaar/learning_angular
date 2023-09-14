@@ -43,6 +43,11 @@ svg {
   display: block;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -80,22 +85,47 @@ form {
     }
   }
 
-  > button {
-    display: grid;
-    place-items: center;
-    padding: 7px 25px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    font-weight: 700;
-    background: #00ffbf;
-    color: #fff;
-    cursor: pointer;
+  // > button {
+  //   display: grid;
+  //   place-items: center;
+  //   padding: 7px 25px;
+  //   border: 1px solid transparent;
+  //   border-radius: 5px;
+  //   font-weight: 700;
+  //   background: #00ffbf;
+  //   color: #fff;
+  //   cursor: pointer;
 
-    &:hover,
-    &:focus {
-      border: 1px solid #00ffbf;
-      background: white;
-      color: #00ffbf;
-    }
+  //   &:hover,
+  //   &:focus {
+  //     border: 1px solid #00ffbf;
+  //     background: white;
+  //     color: #00ffbf;
+  //   }
+  // }
+}
+
+button {
+  display: grid;
+  place-items: center;
+  padding: 7px 25px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: 700;
+  background: #00ffbf;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #00ffbf;
+    background: white;
+    color: #00ffbf;
   }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

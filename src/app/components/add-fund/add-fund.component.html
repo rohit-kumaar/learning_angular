@@ -1,1 +1,36 @@
-<p>add-fund works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <h1>Fund</h1>
+  <div>
+    <input
+      type="email"
+      formControlName="email"
+      id="email"
+      placeholder="Enter the email"
+    />
+
+    <span
+      *ngIf="emailValidator && emailValidator.invalid && emailValidator.touched"
+      >Please enter a valid email</span
+    >
+  </div>
+
+  <div>
+    <input
+      type="password"
+      formControlName="password"
+      id="password"
+      placeholder="Enter enter a password"
+    />
+
+    <span
+      *ngIf="
+        passwordValidator &&
+        passwordValidator.invalid &&
+        passwordValidator.touched
+      "
+      >Enter enter a valid password</span
+    >
+  </div>
+
+  <button type="submit" [disabled]="loginForm.invalid">Submit</button>
+</form>
