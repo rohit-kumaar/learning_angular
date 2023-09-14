@@ -1,5 +1,5 @@
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  <h1>Fund</h1>
+  <h1>Add Fund</h1>
   <div>
     <input
       type="email"
@@ -32,5 +32,10 @@
     >
   </div>
 
-  <button type="submit" [disabled]="loginForm.invalid">Submit</button>
+  <div class="btn-wrapper">
+    <button [disabled]="loginForm.invalid">Add</button>
+    <button [routerLink]="['details']" routerLinkActive="router-link-active">
+      Preview
+    </button>
+  </div>
 </form>

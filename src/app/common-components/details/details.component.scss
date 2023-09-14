@@ -1,0 +1,14 @@
+table {
+
+     margin-block: 50px;
+    
+  > thead,
+  tbody {
+    > tr {
+      > th,
+      td {
+        padding: 10px 20px;
+      }
+    }
+  }
+}

@@ -84,25 +84,6 @@ form {
       color: red;
     }
   }
-
-  // > button {
-  //   display: grid;
-  //   place-items: center;
-  //   padding: 7px 25px;
-  //   border: 1px solid transparent;
-  //   border-radius: 5px;
-  //   font-weight: 700;
-  //   background: #00ffbf;
-  //   color: #fff;
-  //   cursor: pointer;
-
-  //   &:hover,
-  //   &:focus {
-  //     border: 1px solid #00ffbf;
-  //     background: white;
-  //     color: #00ffbf;
-  //   }
-  // }
 }
 
 button {
@@ -128,4 +109,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
